@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Thank you for your interest in my profile! :)
+Please excuse the lack of optimization of this web page, as I had limited time to work on it.
+All elements taken from Duolingo are used solely for the purpose of this application (no copyright infringement intended). -->
+	
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>Maxime Warnier - Cover Letter</title>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="https://maximewarnier.github.io/favicon.ico" />
+		
+		<link href="https://maximewarnier.github.io/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+	
+		<h1>Maxime Warnier</h1>
+	
+		<div id="education_top" class="popup" style="margin-right: 20px; margin-top: 20px;"><img src="https://maximewarnier.github.io/education.png" alt="" />
+		<div><strong>Education</strong></div>
+			<span id="education" class="popuptext"><a href="https://maximewarnier.github.io/education.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<div id="proficiency_top" class="popup" style="margin-right: 20px;"><img src="https://maximewarnier.github.io/proficiency.png" alt="" />
+		<div><strong>Languages</strong></div>
+			<span id="proficiency" class="popuptext"><a href="https://maximewarnier.github.io/proficiency.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<div id="teaching_top" class="popup"><img src="https://maximewarnier.github.io/teaching.png" alt="" />
+		<div><strong>Teaching Exp.</strong></div>
+			<span id="teaching" class="popuptext"><a href="https://maximewarnier.github.io/teaching.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<div style="height:30px;"></div>
+		
+		<div id="writing_top" class="popup" style="margin-right: 20px;"><img src="https://maximewarnier.github.io/writing.png" alt="" />
+		<div><strong>Writing Skills</strong></div>
+			<span id="writing" class="popuptext"><a href="https://maximewarnier.github.io/writing.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<div id="skills_top" class="popup" style="margin-right: 20px;"><img src="https://maximewarnier.github.io/skills.png" alt="" />
+		<div><strong>Soft Skills</strong></div>
+			<span id="skills" class="popuptext"><a href="https://maximewarnier.github.io/skills.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<div id="location_top" class="popup"><img src="https://maximewarnier.github.io/location.png" alt="" />
+		<div><strong>Location</strong></div>
+			<span id="location" class="popuptext"><a href="https://maximewarnier.github.io/location.html"><img src="https://maximewarnier.github.io/start_button.png" alt="Start" /></a></span>
+		</div>
+		
+		<script>
+		var educationTop = document.getElementById("education_top");
+		var proficiencyTop = document.getElementById("proficiency_top");
+		var teachingTop = document.getElementById("teaching_top");
+		var writingTop = document.getElementById("writing_top");
+		var skillsTop = document.getElementById("skills_top");
+		var locatTop = document.getElementById("location_top");
+		
+		var education = document.getElementById("education");
+		var proficiency = document.getElementById("proficiency");
+		var teaching = document.getElementById("teaching");
+		var writing = document.getElementById("writing");
+		var skills = document.getElementById("skills");
+		var locat = document.getElementById("location");
+		
+		document.querySelector("html").addEventListener("click", function () {
+			education.classList.remove("show");
+			proficiency.classList.remove("show");
+			teaching.classList.remove("show");
+			writing.classList.remove("show");
+			skills.classList.remove("show");
+			locat.classList.remove("show");
+		}, false);
+
+		educationTop.addEventListener("click", function (ev) {
+			if(education.classList.contains("show")) {
+				education.classList.remove("show");
+			} else {
+				education.classList.add("show");
+			}
+			proficiency.classList.remove("show");
+			teaching.classList.remove("show");
+			writing.classList.remove("show");
+			skills.classList.remove("show");
+			locat.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+
+		proficiencyTop.addEventListener("click", function (ev) {
+			if(proficiency.classList.contains("show")) {
+				proficiency.classList.remove("show");
+			} else {
+				proficiency.classList.add("show");
+			}
+			education.classList.remove("show");
+			teaching.classList.remove("show");
+			writing.classList.remove("show");
+			skills.classList.remove("show");
+			locat.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+		
+		teachingTop.addEventListener("click", function (ev) {
+			if(teaching.classList.contains("show")) {
+				teaching.classList.remove("show");
+			} else {
+				teaching.classList.add("show");
+			}
+			education.classList.remove("show");
+			proficiency.classList.remove("show");
+			writing.classList.remove("show");
+			skills.classList.remove("show");
+			locat.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+		
+		writingTop.addEventListener("click", function (ev) {
+			if(writing.classList.contains("show")) {
+				writing.classList.remove("show");
+			} else {
+				writing.classList.add("show");
+			}
+			education.classList.remove("show");
+			proficiency.classList.remove("show");
+			teaching.classList.remove("show");
+			skills.classList.remove("show");
+			locat.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+		
+		skillsTop.addEventListener("click", function (ev) {
+			if(skills.classList.contains("show")) {
+				skills.classList.remove("show");
+			} else {
+				skills.classList.add("show");
+			}
+			education.classList.remove("show");
+			proficiency.classList.remove("show");
+			teaching.classList.remove("show");
+			writing.classList.remove("show");
+			locat.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+		
+		locatTop.addEventListener("click", function (ev) {
+			if(locat.classList.contains("show")) {
+				locat.classList.remove("show");
+			} else {
+				locat.classList.add("show");
+			}
+			education.classList.remove("show");
+			proficiency.classList.remove("show");
+			teaching.classList.remove("show");
+			writing.classList.remove("show");
+			skills.classList.remove("show");
+			
+			ev.stopPropagation();
+		}, false);
+		</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,118 @@
+@font-face { /* Taken from Duolingo website */
+	font-display: swap;
+	font-family: din-round;
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://maximewarnier.github.io/font.woff2) format("woff2"), url(https://maximewarnier.github.io/font.woff) format("woff");
+}
+
+* {
+	font-family: din-round, sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+#content {
+	margin-top: 3%;
+}
+
+/* Popup box adapted from https://www.w3schools.com/howto/howto_js_popup.asp */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.popup .popuptext {
+	visibility: hidden;
+	width: 280px;
+	background-color: #1cb0f6;
+	text-align: center;
+	border-radius: 10px;
+	padding-left: 5%;
+	padding-right: 4%;
+	padding-top: 8%;
+	position: absolute;
+	z-index: 1;
+	bottom: -55%;
+	left: 80%;
+	margin-left: -180px;
+}
+
+.popup .popuptext::before {
+	content: "";
+	position: absolute;
+	top: -14.5%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #1cb0f6 transparent;
+}
+
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+#progress_top {
+	text-align: left;
+	margin-left: 25%;
+	margin-right: 10%;
+	margin-top: 2%;
+}
+
+#progress {
+	background: #e5e5e5;
+	position: absolute;
+	width: 50%;
+	border-radius: 98px;
+	height: 16px;
+	user-select: auto;
+	display: inline;
+	margin-left: 1%;
+}
+
+#progress_done {
+	opacity: 1;
+
+	background: #78c800;
+	/*min-width: 16px; */
+
+	position: relative;
+
+	transition: all .5s;
+
+	z-index: 1;
+
+	border-radius: 98px;
+
+	height: 16px;
+}
+
+#footer {
+	
+	margin-top: 4%;
+	padding-top: 3%;
+
+	border-top: 2px solid #e5e5e5;
+	
+	width: 100%;
+}
