@@ -14,6 +14,10 @@ body {
 	text-align: center;
 }
 
+a, a:visited {
+	color: #1cb0f6;
+}
+
 #content {
 	margin-top: 3%;
 }
